@@ -1,0 +1,9 @@
+C:\GitHub\eManager\eManager.Domain\bin\Debug\eManager.Domain.dll
+C:\GitHub\eManager\eManager.Domain\bin\Debug\eManager.Domain.pdb
+C:\GitHub\eManager\eManager.Domain\obj\Debug\eManager.Domain.dll
+C:\GitHub\eManager\eManager.Domain\obj\Debug\eManager.Domain.pdb
+C:\GitHub\eManager\eManager.Domain\bin\Debug\Microsoft.Practices.Unity.Configuration.dll
+C:\GitHub\eManager\eManager.Domain\bin\Debug\Microsoft.Practices.Unity.dll
+C:\GitHub\eManager\eManager.Domain\bin\Debug\Microsoft.Practices.Unity.xml
+C:\GitHub\eManager\eManager.Domain\bin\Debug\Microsoft.Practices.Unity.Configuration.xml
+C:\GitHub\eManager\eManager.Domain\obj\Debug\eManager.Domain.csprojResolveAssemblyReference.cache

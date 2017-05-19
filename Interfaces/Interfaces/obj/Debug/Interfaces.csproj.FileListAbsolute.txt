@@ -1,0 +1,8 @@
+C:\Git\Training\Interfaces\Interfaces\bin\Debug\Interfaces.exe.config
+C:\Git\Training\Interfaces\Interfaces\bin\Debug\Interfaces.exe
+C:\Git\Training\Interfaces\Interfaces\bin\Debug\Interfaces.pdb
+C:\Git\Training\Interfaces\Interfaces\bin\Debug\Polygon.Library.dll
+C:\Git\Training\Interfaces\Interfaces\bin\Debug\Polygon.Library.pdb
+C:\Git\Training\Interfaces\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Git\Training\Interfaces\Interfaces\obj\Debug\Interfaces.exe
+C:\Git\Training\Interfaces\Interfaces\obj\Debug\Interfaces.pdb

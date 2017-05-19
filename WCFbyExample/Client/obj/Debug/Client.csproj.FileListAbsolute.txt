@@ -1,0 +1,6 @@
+C:\Git\GitHub\WCFbyExample\EvalServiceLibrary\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+C:\Git\GitHub\WCFbyExample\EvalServiceLibrary\Client\bin\Debug\Client.exe.config
+C:\Git\GitHub\WCFbyExample\EvalServiceLibrary\Client\bin\Debug\Client.exe
+C:\Git\GitHub\WCFbyExample\EvalServiceLibrary\Client\bin\Debug\Client.pdb
+C:\Git\GitHub\WCFbyExample\EvalServiceLibrary\Client\obj\Debug\Client.exe
+C:\Git\GitHub\WCFbyExample\EvalServiceLibrary\Client\obj\Debug\Client.pdb

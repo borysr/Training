@@ -1,0 +1,4 @@
+C:\Git\Training\Interfaces\Polygon.Library\bin\Debug\Polygon.Library.dll
+C:\Git\Training\Interfaces\Polygon.Library\bin\Debug\Polygon.Library.pdb
+C:\Git\Training\Interfaces\Polygon.Library\obj\Debug\Polygon.Library.dll
+C:\Git\Training\Interfaces\Polygon.Library\obj\Debug\Polygon.Library.pdb

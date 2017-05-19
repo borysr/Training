@@ -1,0 +1,12 @@
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Data\bin\Debug\GeoLib.Data.dll.config
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Data\bin\Debug\GeoLib.Data.dll
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Data\bin\Debug\GeoLib.Data.pdb
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Data\bin\Debug\EntityFramework.dll
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Data\bin\Debug\GeoLib.Core.dll
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Data\bin\Debug\GeoLib.Core.pdb
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Data\bin\Debug\EntityFramework.xml
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Data\obj\Debug\GeoLib.Data.csprojResolveAssemblyReference.cache
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Data\obj\Debug\GeoLib.Data.dll
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Data\obj\Debug\GeoLib.Data.pdb

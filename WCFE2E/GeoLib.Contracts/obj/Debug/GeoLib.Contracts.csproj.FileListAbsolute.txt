@@ -1,0 +1,5 @@
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Contracts\bin\Debug\GeoLib.Contracts.dll
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Contracts\bin\Debug\GeoLib.Contracts.pdb
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Contracts\obj\Debug\GeoLib.Contracts.csprojResolveAssemblyReference.cache
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Contracts\obj\Debug\GeoLib.Contracts.dll
+C:\Git\GitHub\WCFE2E3\Starter\GeoLib.Contracts\obj\Debug\GeoLib.Contracts.pdb
