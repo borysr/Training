@@ -1,0 +1,92 @@
+﻿@model Test.Domain.Order
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDate)
+        </dd>
+
+    </dl>
+</div>
+<hr />
+
+<div>
+    <hr />
+    <dl class="dl-vertical">
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDetails.FirstOrDefault(d => d.OrderId == model.Id ).OrderId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDetails.FirstOrDefault(d => d.OrderId == model.Id).OrderId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDetails.FirstOrDefault(d => d.OrderId == model.Id).ItemName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDetails.FirstOrDefault(d => d.OrderId == model.Id).ItemName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDetails.FirstOrDefault(d => d.OrderId == model.Id).ItemPrice)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDetails.FirstOrDefault(d => d.OrderId == model.Id).ItemPrice)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OrderDetails.FirstOrDefault(d => d.OrderId == model.Id).Quantity)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OrderDetails.FirstOrDefault(d => d.OrderId == model.Id).Quantity)
+        </dd>
+
+    </dl>
+</div>
+
+@*<table>
+    <tr>
+        <th>Item Name</th>
+        <th>Quantity</th>
+        <th>Price</th>
+    </tr>
+    <tbody>
+        @foreach (var item in Model.OrderDetails)
+        {
+            <tr>
+                <td>@item.ItemName</td>
+                <td>@item.Quantity</td>
+                <td>@item.ItemPrice</td>
+            </tr>
+        }
+    </tbody>
+</table>*@
+
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
