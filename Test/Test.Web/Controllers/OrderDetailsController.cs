@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Test.Domain;
 using Test.Web.Data;
+using Test.Web.Models;
 
 namespace Test.Web.Controllers
 {
@@ -16,10 +17,24 @@ namespace Test.Web.Controllers
         private TestDb db = new TestDb();
 
         // GET: OrderDetails
-        public ActionResult Index()
-        {
-            return View(db.OrderDetails.ToList());
-        }
+        //public ActionResult Index()
+        //{
+        //    return View(db.OrderDetails.ToList());
+        //}
+
+        //public ActionResult Order(int? orderId)
+        //{
+        //    if (orderId == null)
+        //    {
+        //        return RedirectToAction("index", "orders");
+        //    }
+        //    var orderDetails = db.OrderDetails.Where(d => d.OrderId == orderId).OrderBy(d => d.Id).ToList();
+        //    if (orderDetails == null)
+        //    {
+        //        orderDetails = new List<OrderDetail>();
+        //    }
+        //    return View(orderDetails);
+        //}
 
         // GET: OrderDetails/Details/5
         public ActionResult Details(int? id)
@@ -37,9 +52,11 @@ namespace Test.Web.Controllers
         }
 
         // GET: OrderDetails/Create
-        public ActionResult Create()
+        public ActionResult Create(int orderId)
         {
-            return View();
+            var model = new OrderDetail();
+            model.OrderId = orderId;
+            return View(model);
         }
 
         // POST: OrderDetails/Create
@@ -47,16 +64,37 @@ namespace Test.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,OrderId,ItemName,ItemPrice,Quantity")] OrderDetail orderDetail)
+        //public ActionResult Create([Bind(Include = "Id,OrderId,ItemName,ItemPrice,Quantity")] OrderDetail orderDetail)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        db.OrderDetails.Add(orderDetail);
+        //        db.SaveChanges();
+        //        return RedirectToAction("Index");
+        //    }
+
+        //    return View(orderDetail);
+        //}
+        public ActionResult Create([Bind(Include = "Id,OrderId,ItemName,ItemPrice,Quantity")] OrderDetail model)
         {
+            OrderDetail detail = new OrderDetail();
             if (ModelState.IsValid)
             {
-                db.OrderDetails.Add(orderDetail);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
+                var order = db.Orders.Single(d => d.Id == model.OrderId);
+                detail = new OrderDetail()
+                {
+                    OrderId = model.OrderId,
+                    ItemName = model.ItemName,
+                    Quantity = model.Quantity,
+                    ItemPrice = model.ItemPrice
+                };
+                order.OrderDetails.Add(detail);
 
-            return View(orderDetail);
+                db.SaveChanges();
+
+                return RedirectToAction("details", "orders", new { id = model.OrderId });
+            }
+            return View(model);
         }
 
         // GET: OrderDetails/Edit/5
@@ -85,7 +123,7 @@ namespace Test.Web.Controllers
             {
                 db.Entry(orderDetail).State = EntityState.Modified;
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("details", "orders", new { id = orderDetail.OrderId });
             }
             return View(orderDetail);
         }
@@ -113,7 +151,7 @@ namespace Test.Web.Controllers
             OrderDetail orderDetail = db.OrderDetails.Find(id);
             db.OrderDetails.Remove(orderDetail);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("details", "orders", new { id = orderDetail.OrderId });
         }
 
         protected override void Dispose(bool disposing)

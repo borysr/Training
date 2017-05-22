@@ -49,7 +49,7 @@
                 <td>@item.ItemPrice</td>
                 <td>
                     @Html.ActionLink("Edit", "Edit", "OrderDetails", new { id = item.Id }, null) |
-                    @Html.ActionLink("Details", "Details", "OrderDetails", new { id = item.Id }, null) |
+                    @Html.ActionLink("Details", "Details", "OrderDetails", new { id = item.Id, orderId = Model.Id }, null) |
                     @Html.ActionLink("Delete", "Delete", "OrderDetails", new { id = item.Id }, null)
                 </td>
             </tr>
@@ -57,5 +57,5 @@
     </tbody>
 </table>
 <p>
-    @Html.ActionLink("Add Item", "Create", "OrderDetails")
+    @Html.ActionLink("Add Item", "Create", "OrderDetails", new { orderId = Model.Id }, null)
 </p>
