@@ -110,8 +110,12 @@ namespace Test.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
+            var details = db.OrderDetails.Where(d => d.OrderId == id);
             Order order = db.Orders.Find(id);
+            db.OrderDetails.RemoveRange(details);
+
             db.Orders.Remove(order);
+
             db.SaveChanges();
             return RedirectToAction("Index");
         }

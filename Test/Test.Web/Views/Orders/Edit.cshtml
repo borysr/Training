@@ -1,19 +1,15 @@
 ﻿@model Test.Domain.Order
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Edit Order";
 }
-
-<h2>Edit</h2>
-
+<h2>Edit Order</h2>
 
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
     
     <div class="form-horizontal">
-        <h4>Order</h4>
-        <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.Id)
 
@@ -42,7 +38,8 @@
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Back to List", "Index") | 
+    @Html.ActionLink("Edit Order Lines", "details", "orders", new { id = Model.Id}, null );
 </div>
 
 @section Scripts {
