@@ -176,16 +176,25 @@
     <Compile Include="DataContexts\BooksMigrations\201706022248525_InitialCreate.Designer.cs">
       <DependentUpon>201706022248525_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataContexts\BooksMigrations\201706040236582_DefaultSchema.cs" />
+    <Compile Include="DataContexts\BooksMigrations\201706040236582_DefaultSchema.Designer.cs">
+      <DependentUpon>201706040236582_DefaultSchema.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataContexts\BooksMigrations\Configuration.cs" />
     <Compile Include="DataContexts\IdentityDb.cs" />
     <Compile Include="DataContexts\IdentityMigrations\201706022247451_InitialCreate.cs" />
     <Compile Include="DataContexts\IdentityMigrations\201706022247451_InitialCreate.Designer.cs">
       <DependentUpon>201706022247451_InitialCreate.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataContexts\IdentityMigrations\201706040237469_DefaultSchema.cs" />
+    <Compile Include="DataContexts\IdentityMigrations\201706040237469_DefaultSchema.Designer.cs">
+      <DependentUpon>201706040237469_DefaultSchema.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataContexts\IdentityMigrations\Configuration.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\EnumHelpers.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -274,8 +283,14 @@
     <EmbeddedResource Include="DataContexts\BooksMigrations\201706022248525_InitialCreate.resx">
       <DependentUpon>201706022248525_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\BooksMigrations\201706040236582_DefaultSchema.resx">
+      <DependentUpon>201706040236582_DefaultSchema.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DataContexts\IdentityMigrations\201706022247451_InitialCreate.resx">
       <DependentUpon>201706022247451_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DataContexts\IdentityMigrations\201706040237469_DefaultSchema.resx">
+      <DependentUpon>201706040237469_DefaultSchema.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
